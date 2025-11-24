@@ -3,8 +3,8 @@
     "title": "Small Business Idea",
     "bio": "Bio for a small business idea.",
     "avatar": "img/500x500.jpg",
-    "theme": "minimal",          // options: "minimal", "dark", "gradient"
-    "layout": "stacked",         // options: "stacked", "cards"
+    "theme": "minimal",
+    "layout": "stacked",
     "footerText": "© 2025 Small Business Idea · All rights reserved."
   },
   "links": [
