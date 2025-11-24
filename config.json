@@ -1,0 +1,53 @@
+{
+  "site": {
+    "title": "Sergio Arreola",
+    "bio": "Web designer & developer · Building clean, conversion-focused sites.",
+    "avatar": "img/500x500.jpg",
+    "theme": "minimal",          // options: "minimal", "dark", "gradient"
+    "layout": "stacked",         // options: "stacked", "cards"
+    "footerText": "© 2025 Sergio · All rights reserved."
+  },
+  "links": [
+    {
+      "label": "Portfolio",
+      "url": "https://your-portfolio.com",
+      "badge": "Featured",
+      "featured": true
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/your-username",
+      "badge": "",
+      "featured": false
+    },
+    {
+      "label": "Contact",
+      "url": "mailto:you@example.com",
+      "badge": "Email",
+      "featured": false
+    },
+    {
+      "label": "Latest Project",
+      "url": "https://your-portfolio.com/latest",
+      "badge": "New",
+      "featured": true
+    }
+  ],
+  "social": [
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/your-handle",
+      "icon": "instagram"
+    },
+    {
+      "label": "X (Twitter)",
+      "url": "https://x.com/your-handle",
+      "icon": "x"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/your-handle",
+      "icon": "linkedin"
+    }
+  ]
+}

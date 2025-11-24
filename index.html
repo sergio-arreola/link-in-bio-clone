@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-layout="stacked">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links</title>
+
+  <!-- Base styles (shared across all themes) -->
+  <link rel="stylesheet" href="themes/base.css" />
+
+  <!-- Theme styles (swapped via JS based on config.json) -->
+  <link id="theme-stylesheet" rel="stylesheet" href="themes/theme-minimal.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="profile">
+      <img id="avatar" class="profile__avatar" alt="Profile avatar" />
+      <h1 id="title" class="profile__title"></h1>
+      <p id="bio" class="profile__bio"></p>
+    </section>
+
+    <section id="links" class="links"></section>
+
+    <section id="social" class="social"></section>
+
+    <footer class="footer">
+      <small id="footer-text"></small>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

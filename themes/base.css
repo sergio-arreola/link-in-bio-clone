@@ -1,0 +1,147 @@
+/* themes/base.css */
+
+/* Reset-ish */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  max-width: 480px;
+  padding: 32px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Profile */
+.profile {
+  text-align: center;
+}
+
+.profile__avatar {
+  width: 104px;
+  height: 104px;
+  border-radius: 999px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.profile__title {
+  font-size: 1.5rem;
+  margin: 0 0 4px;
+}
+
+.profile__bio {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* Links container */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Link item base */
+.link-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 999px;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-size: 0.98rem;
+  border: 1px solid transparent;
+  transition:
+    transform 0.1s ease-out,
+    box-shadow 0.1s ease-out,
+    background-color 0.1s ease-out,
+    border-color 0.1s ease-out;
+}
+
+.link-item__label {
+  flex: 1;
+  text-align: left;
+}
+
+.link-item__badge {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+/* Featured variant */
+.link-item--featured {
+  font-weight: 600;
+}
+
+/* Layout variants */
+/* Stacked: full-width pill buttons (default) */
+html[data-layout="stacked"] .links {
+  align-items: stretch;
+}
+
+html[data-layout="stacked"] .link-item {
+  width: 100%;
+}
+
+/* Cards: card-like blocks with vertical layout */
+html[data-layout="cards"] .links {
+  gap: 14px;
+}
+
+html[data-layout="cards"] .link-item {
+  border-radius: 16px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Social icons */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social__item {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/* Generic icon styling; theme controls colors */
+.social__icon {
+  display: inline-block;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer small {
+  font-size: 0.75rem;
+  opacity: 0.65;
+}
